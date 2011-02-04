@@ -1,0 +1,4 @@
+This plugin let you use the bcrypt file encryption algorithm
+to hash your users passwords instead of the regular algorithm provided by 
+spring-security-core plugin. You can customize the computation cost
+of the algorithm to get stronger hashes.
