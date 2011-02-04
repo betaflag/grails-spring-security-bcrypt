@@ -2,3 +2,16 @@ This plugin let you use the bcrypt file encryption algorithm
 to hash your users passwords instead of the regular algorithm provided by 
 spring-security-core plugin. You can customize the computation cost
 of the algorithm to get stronger hashes.
+
+To install the plugin :
+$ grails install-plugin spring-security-bcrypt
+
+In 'grails-app/conf/spring/resources.groovy' add  :
+passwordEncoder(org.codehaus.groovy.grails.plugins.springsecurity.bcrypt.BCryptPasswordEncoder)
+
+To configure the log rounds (to add computation cost)  :
+
+In 'grails-app/conf/Config.groovy' add :
+grails.plugins.springsecurity.bcrypt.logrounds = 10
+
+The default log rounds number is 10.
