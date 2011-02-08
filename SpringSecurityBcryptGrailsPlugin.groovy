@@ -1,7 +1,7 @@
 class SpringSecurityBcryptGrailsPlugin {
     def version = "0.1"
-    def grailsVersion = "1.3.6 > *"
-    def dependsOn = [springSecurityCore:1.1]
+    def grailsVersion = "1.2.3 > *"
+    def dependsOn = [springSecurityCore: '1.1 > *']
 
     def author = "Nicolas Lupien"
     def authorEmail = ""
