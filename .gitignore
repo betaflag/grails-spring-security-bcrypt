@@ -1,0 +1,4 @@
+stacktrace.log
+/target
+/grails-spring-security-bcrypt-*.zip
+/plugin.xml
