@@ -1,5 +1,5 @@
 class SpringSecurityBcryptGrailsPlugin {
-    def version = "0.2"
+    def version = "0.3"
     def grailsVersion = "1.2.3 > *"
     def dependsOn = [springSecurityCore: '1.1 > *']
 
