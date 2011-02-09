@@ -1,5 +1,5 @@
 class SpringSecurityBcryptGrailsPlugin {
-    def version = "0.1"
+    def version = "0.2"
     def grailsVersion = "1.2.3 > *"
     def dependsOn = [springSecurityCore: '1.1 > *']
 
@@ -13,4 +13,9 @@ of the algorithm to get stronger hashes.
 '''
 
     def documentation = "http://grails.org/plugin/spring-security-bcrypt"
+
+    def doWithSpring = {
+        // Override the default password encoder to use bcrypt
+        passwordEncoder(org.codehaus.groovy.grails.plugins.springsecurity.bcrypt.BCryptPasswordEncoder)
+    }
 }
